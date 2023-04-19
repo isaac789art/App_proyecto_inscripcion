@@ -82,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cls_Conexion.cs" />
-    <Compile Include="cls_funciones.Candidatos.cs" />
+    <Compile Include="cls_funcionesCandidatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

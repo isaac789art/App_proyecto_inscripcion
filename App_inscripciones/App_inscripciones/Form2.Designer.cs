@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.b = new System.Windows.Forms.Button();
+            this.ptb_foto2 = new System.Windows.Forms.PictureBox();
+            this.cbx_programaformacion = new System.Windows.Forms.ComboBox();
+            this.txt_contacto = new System.Windows.Forms.TextBox();
+            this.txt_identificacion2 = new System.Windows.Forms.TextBox();
+            this.txt_direccion2 = new System.Windows.Forms.TextBox();
+            this.txt_correo2 = new System.Windows.Forms.TextBox();
+            this.txt_nombrecompleto = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_nombrecompleto = new System.Windows.Forms.TextBox();
-            this.txt_correo2 = new System.Windows.Forms.TextBox();
-            this.txt_direccion2 = new System.Windows.Forms.TextBox();
-            this.txt_identificacion2 = new System.Windows.Forms.TextBox();
-            this.txt_contacto2 = new System.Windows.Forms.TextBox();
-            this.cbx_programaformacion = new System.Windows.Forms.ComboBox();
-            this.ptb_foto2 = new System.Windows.Forms.PictureBox();
-            this.b = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_foto2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,7 +59,7 @@
             this.panel1.Controls.Add(this.b);
             this.panel1.Controls.Add(this.ptb_foto2);
             this.panel1.Controls.Add(this.cbx_programaformacion);
-            this.panel1.Controls.Add(this.txt_contacto2);
+            this.panel1.Controls.Add(this.txt_contacto);
             this.panel1.Controls.Add(this.txt_identificacion2);
             this.panel1.Controls.Add(this.txt_direccion2);
             this.panel1.Controls.Add(this.txt_correo2);
@@ -76,6 +76,137 @@
             this.panel1.Size = new System.Drawing.Size(740, 385);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(665, 212);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 76);
+            this.button3.TabIndex = 31;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // b
+            // 
+            this.b.Image = ((System.Drawing.Image)(resources.GetObject("b.Image")));
+            this.b.Location = new System.Drawing.Point(527, 212);
+            this.b.Name = "b";
+            this.b.Size = new System.Drawing.Size(75, 77);
+            this.b.TabIndex = 29;
+            this.b.UseVisualStyleBackColor = true;
+            // 
+            // ptb_foto2
+            // 
+            this.ptb_foto2.BackColor = System.Drawing.Color.Honeydew;
+            this.ptb_foto2.Location = new System.Drawing.Point(579, 67);
+            this.ptb_foto2.Name = "ptb_foto2";
+            this.ptb_foto2.Size = new System.Drawing.Size(100, 127);
+            this.ptb_foto2.TabIndex = 22;
+            this.ptb_foto2.TabStop = false;
+            // 
+            // cbx_programaformacion
+            // 
+            this.cbx_programaformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_programaformacion.FormattingEnabled = true;
+            this.cbx_programaformacion.Location = new System.Drawing.Point(249, 295);
+            this.cbx_programaformacion.Name = "cbx_programaformacion";
+            this.cbx_programaformacion.Size = new System.Drawing.Size(203, 26);
+            this.cbx_programaformacion.TabIndex = 21;
+            // 
+            // txt_contacto
+            // 
+            this.txt_contacto.Location = new System.Drawing.Point(249, 269);
+            this.txt_contacto.Name = "txt_contacto";
+            this.txt_contacto.Size = new System.Drawing.Size(203, 20);
+            this.txt_contacto.TabIndex = 20;
+            // 
+            // txt_identificacion2
+            // 
+            this.txt_identificacion2.Location = new System.Drawing.Point(249, 130);
+            this.txt_identificacion2.Name = "txt_identificacion2";
+            this.txt_identificacion2.Size = new System.Drawing.Size(203, 20);
+            this.txt_identificacion2.TabIndex = 19;
+            // 
+            // txt_direccion2
+            // 
+            this.txt_direccion2.Location = new System.Drawing.Point(249, 233);
+            this.txt_direccion2.Name = "txt_direccion2";
+            this.txt_direccion2.Size = new System.Drawing.Size(203, 20);
+            this.txt_direccion2.TabIndex = 18;
+            // 
+            // txt_correo2
+            // 
+            this.txt_correo2.Location = new System.Drawing.Point(249, 201);
+            this.txt_correo2.Name = "txt_correo2";
+            this.txt_correo2.Size = new System.Drawing.Size(203, 20);
+            this.txt_correo2.TabIndex = 17;
+            // 
+            // txt_nombrecompleto
+            // 
+            this.txt_nombrecompleto.Location = new System.Drawing.Point(249, 163);
+            this.txt_nombrecompleto.Name = "txt_nombrecompleto";
+            this.txt_nombrecompleto.Size = new System.Drawing.Size(203, 20);
+            this.txt_nombrecompleto.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(35, 305);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(150, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Programa de formacion:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(35, 273);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Contacto:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(35, 237);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Direccion:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(35, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Correo:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(35, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Nombre Completo:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 134);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Identificacion:";
             // 
             // panel2
             // 
@@ -96,137 +227,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Modulo Inscripciones";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 16);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Identificacion:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Nombre Completo:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 16);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Correo:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 237);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Direccion:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(35, 273);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Contacto:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 305);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(150, 16);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Programa de formacion:";
-            // 
-            // txt_nombrecompleto
-            // 
-            this.txt_nombrecompleto.Location = new System.Drawing.Point(249, 163);
-            this.txt_nombrecompleto.Name = "txt_nombrecompleto";
-            this.txt_nombrecompleto.Size = new System.Drawing.Size(203, 20);
-            this.txt_nombrecompleto.TabIndex = 16;
-            // 
-            // txt_correo2
-            // 
-            this.txt_correo2.Location = new System.Drawing.Point(249, 201);
-            this.txt_correo2.Name = "txt_correo2";
-            this.txt_correo2.Size = new System.Drawing.Size(203, 20);
-            this.txt_correo2.TabIndex = 17;
-            // 
-            // txt_direccion2
-            // 
-            this.txt_direccion2.Location = new System.Drawing.Point(249, 233);
-            this.txt_direccion2.Name = "txt_direccion2";
-            this.txt_direccion2.Size = new System.Drawing.Size(203, 20);
-            this.txt_direccion2.TabIndex = 18;
-            // 
-            // txt_identificacion2
-            // 
-            this.txt_identificacion2.Location = new System.Drawing.Point(249, 130);
-            this.txt_identificacion2.Name = "txt_identificacion2";
-            this.txt_identificacion2.Size = new System.Drawing.Size(203, 20);
-            this.txt_identificacion2.TabIndex = 19;
-            // 
-            // txt_contacto2
-            // 
-            this.txt_contacto2.Location = new System.Drawing.Point(249, 269);
-            this.txt_contacto2.Name = "txt_contacto2";
-            this.txt_contacto2.Size = new System.Drawing.Size(203, 20);
-            this.txt_contacto2.TabIndex = 20;
-            // 
-            // cbx_programaformacion
-            // 
-            this.cbx_programaformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbx_programaformacion.FormattingEnabled = true;
-            this.cbx_programaformacion.Location = new System.Drawing.Point(249, 295);
-            this.cbx_programaformacion.Name = "cbx_programaformacion";
-            this.cbx_programaformacion.Size = new System.Drawing.Size(203, 26);
-            this.cbx_programaformacion.TabIndex = 21;
-            // 
-            // ptb_foto2
-            // 
-            this.ptb_foto2.BackColor = System.Drawing.Color.Honeydew;
-            this.ptb_foto2.Location = new System.Drawing.Point(579, 67);
-            this.ptb_foto2.Name = "ptb_foto2";
-            this.ptb_foto2.Size = new System.Drawing.Size(100, 127);
-            this.ptb_foto2.TabIndex = 22;
-            this.ptb_foto2.TabStop = false;
-            // 
-            // b
-            // 
-            this.b.Image = ((System.Drawing.Image)(resources.GetObject("b.Image")));
-            this.b.Location = new System.Drawing.Point(527, 212);
-            this.b.Name = "b";
-            this.b.Size = new System.Drawing.Size(75, 77);
-            this.b.TabIndex = 29;
-            this.b.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(665, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 76);
-            this.button3.TabIndex = 31;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,9 +237,9 @@
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_foto2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_foto2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,7 +256,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbx_programaformacion;
-        private System.Windows.Forms.TextBox txt_contacto2;
+        private System.Windows.Forms.TextBox txt_contacto;
         private System.Windows.Forms.TextBox txt_identificacion2;
         private System.Windows.Forms.TextBox txt_direccion2;
         private System.Windows.Forms.TextBox txt_correo2;
