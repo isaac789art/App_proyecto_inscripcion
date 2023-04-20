@@ -30,13 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_Edad1 = new System.Windows.Forms.TextBox();
+            this.txt_edad = new System.Windows.Forms.Label();
+            this.cbx_nivelestudio = new System.Windows.Forms.ComboBox();
+            this.txt_contacto = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ptb_foto = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_nuevo = new System.Windows.Forms.Button();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.b = new System.Windows.Forms.Button();
             this.txt_acudinetes = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,12 +62,6 @@
             this.txt_identificacion = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_contacto = new System.Windows.Forms.TextBox();
-            this.btn_nuevo = new System.Windows.Forms.Button();
-            this.cbx_nivelestudio = new System.Windows.Forms.ComboBox();
-            this.txt_edad = new System.Windows.Forms.Label();
-            this.txt_Edad1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_foto)).BeginInit();
@@ -102,6 +102,48 @@
             this.panel1.Size = new System.Drawing.Size(707, 448);
             this.panel1.TabIndex = 0;
             // 
+            // txt_Edad1
+            // 
+            this.txt_Edad1.Location = new System.Drawing.Point(204, 228);
+            this.txt_Edad1.Name = "txt_Edad1";
+            this.txt_Edad1.Size = new System.Drawing.Size(203, 20);
+            this.txt_Edad1.TabIndex = 39;
+            // 
+            // txt_edad
+            // 
+            this.txt_edad.AutoSize = true;
+            this.txt_edad.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_edad.Location = new System.Drawing.Point(9, 231);
+            this.txt_edad.Name = "txt_edad";
+            this.txt_edad.Size = new System.Drawing.Size(40, 16);
+            this.txt_edad.TabIndex = 38;
+            this.txt_edad.Text = "Edad:";
+            // 
+            // cbx_nivelestudio
+            // 
+            this.cbx_nivelestudio.FormattingEnabled = true;
+            this.cbx_nivelestudio.Location = new System.Drawing.Point(204, 307);
+            this.cbx_nivelestudio.Name = "cbx_nivelestudio";
+            this.cbx_nivelestudio.Size = new System.Drawing.Size(121, 21);
+            this.cbx_nivelestudio.TabIndex = 37;
+            // 
+            // txt_contacto
+            // 
+            this.txt_contacto.Location = new System.Drawing.Point(204, 279);
+            this.txt_contacto.Name = "txt_contacto";
+            this.txt_contacto.Size = new System.Drawing.Size(203, 20);
+            this.txt_contacto.TabIndex = 36;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(8, 283);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 16);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "Contacto:";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Orange;
@@ -129,12 +171,22 @@
             this.panel2.Controls.Add(this.btn_Guardar);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.b);
             this.panel2.Location = new System.Drawing.Point(479, 197);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 248);
             this.panel2.TabIndex = 33;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btn_nuevo
+            // 
+            this.btn_nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_nuevo.Image")));
+            this.btn_nuevo.Location = new System.Drawing.Point(3, 3);
+            this.btn_nuevo.Name = "btn_nuevo";
+            this.btn_nuevo.Size = new System.Drawing.Size(75, 77);
+            this.btn_nuevo.TabIndex = 33;
+            this.btn_nuevo.UseVisualStyleBackColor = true;
+            this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click_1);
             // 
             // btn_Guardar
             // 
@@ -165,14 +217,15 @@
             this.button4.TabIndex = 31;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // b
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(3, 86);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 73);
-            this.button3.TabIndex = 30;
-            this.button3.UseVisualStyleBackColor = true;
+            this.b.Image = ((System.Drawing.Image)(resources.GetObject("b.Image")));
+            this.b.Location = new System.Drawing.Point(3, 86);
+            this.b.Name = "b";
+            this.b.Size = new System.Drawing.Size(75, 73);
+            this.b.TabIndex = 30;
+            this.b.UseVisualStyleBackColor = true;
+            this.b.Click += new System.EventHandler(this.button3_Click);
             // 
             // txt_acudinetes
             // 
@@ -278,6 +331,7 @@
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(203, 20);
             this.txt_correo.TabIndex = 8;
+            this.txt_correo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_correo_KeyPress);
             // 
             // txt_direccion
             // 
@@ -344,58 +398,6 @@
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(8, 283);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 16);
-            this.label7.TabIndex = 35;
-            this.label7.Text = "Contacto:";
-            // 
-            // txt_contacto
-            // 
-            this.txt_contacto.Location = new System.Drawing.Point(204, 279);
-            this.txt_contacto.Name = "txt_contacto";
-            this.txt_contacto.Size = new System.Drawing.Size(203, 20);
-            this.txt_contacto.TabIndex = 36;
-            // 
-            // btn_nuevo
-            // 
-            this.btn_nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_nuevo.Image")));
-            this.btn_nuevo.Location = new System.Drawing.Point(3, 3);
-            this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(75, 77);
-            this.btn_nuevo.TabIndex = 33;
-            this.btn_nuevo.UseVisualStyleBackColor = true;
-            this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click_1);
-            // 
-            // cbx_nivelestudio
-            // 
-            this.cbx_nivelestudio.FormattingEnabled = true;
-            this.cbx_nivelestudio.Location = new System.Drawing.Point(204, 307);
-            this.cbx_nivelestudio.Name = "cbx_nivelestudio";
-            this.cbx_nivelestudio.Size = new System.Drawing.Size(121, 21);
-            this.cbx_nivelestudio.TabIndex = 37;
-            // 
-            // txt_edad
-            // 
-            this.txt_edad.AutoSize = true;
-            this.txt_edad.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_edad.Location = new System.Drawing.Point(9, 231);
-            this.txt_edad.Name = "txt_edad";
-            this.txt_edad.Size = new System.Drawing.Size(40, 16);
-            this.txt_edad.TabIndex = 38;
-            this.txt_edad.Text = "Edad:";
-            // 
-            // txt_Edad1
-            // 
-            this.txt_Edad1.Location = new System.Drawing.Point(204, 228);
-            this.txt_Edad1.Name = "txt_Edad1";
-            this.txt_Edad1.Size = new System.Drawing.Size(203, 20);
-            this.txt_Edad1.TabIndex = 39;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -440,7 +442,7 @@
         private System.Windows.Forms.PictureBox ptb_foto;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button b;
         private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

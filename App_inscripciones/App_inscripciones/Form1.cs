@@ -1,10 +1,14 @@
 ﻿using Negocio;
 using System;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Net.Mail;
 using System.Windows.Forms;
+
+
 
 namespace App_inscripciones
 {
@@ -97,6 +101,22 @@ namespace App_inscripciones
                 }
             }
             catch { }
+        }
+
+        private void txt_correo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+        private void fnt_consultar(string identificacion)
+        {
+            cls_ConsultarCanditato obj_consultar = new cls_ConsultarCanditato();
+            obj_consultar.Fnt_Consultar(identificacion);
+            ptb_foto.Image = obj_consultar.getBmp();
+          
+                }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            fnt_consultar(txt_identificacion.Text);
         }
     }
 }

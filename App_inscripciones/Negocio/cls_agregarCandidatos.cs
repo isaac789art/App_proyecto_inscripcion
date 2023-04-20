@@ -37,7 +37,7 @@ namespace Negocio
             this.int_estudio = str_estudio;
             this.str_acudientes = str_acudientes;
             this.byt_imagen = aByte;
-            if (str_id == "" || str_primernombre == "" || str_segundonombre == "" || str_primerapellido == "" || str_segundoapellido == "" || str_contacto == "" || str_direccion == "" || str_correo == "" || str_edad == "" ||str_acudientes == "")
+            if (str_id == "" || str_primernombre == "" || str_segundonombre == "" || str_primerapellido == "" || str_segundoapellido == "" || str_contacto == "" || str_direccion == "" || str_correo == "" || str_edad == "" || str_acudientes == "")
             {
                 str_msn = "Debe ingresar toda la informacion requerida";
             }
@@ -45,10 +45,12 @@ namespace Negocio
             {
                 cls_funcionesCandidatos objGuardar = new cls_funcionesCandidatos();
                 objGuardar.fnt_Guardar(str_id, str_primernombre, str_segundonombre, str_primerapellido, str_segundoapellido, str_contacto, str_correo, str_edad, int_estudio, str_acudientes, byt_imagen);
-                
+
                 str_msn = "EL CANDIDATO" + str_primernombre + "HA SIDO REGISTRADO";
             }
         }
         public string getMsn() { return this.str_msn; }
+        
+
     }
 }
