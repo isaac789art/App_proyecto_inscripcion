@@ -18,7 +18,7 @@ namespace Datos
             {
             cls_Conexion obj_conexion = new cls_Conexion();
                 obj_conexion.fnt_conectar();
-                string cosulta = "insert into tbl_personas(PKId,P_Nombre,S_Nombre,P_Apellido,S_Apellido,Contacto,Direccion,Correo,Edad,FKCodigo_tbl_nivelestudio,Acudiente, Imagen)" + " values ('" + id + "','" + primernombre + "','" + segundonombre + "','" + primerapellido + "','" + segundoapellido + "','" + contacto + "','" + direccion + "','" + correo + "','" + edad + "','" + estudio + "','" + acudientes + "','"+imagen+"');
+                string cosulta = "insert into tbl_personas(PKId,P_Nombre,S_Nombre,P_Apellido,S_Apellido,Contacto,Direccion,Correo,Edad,FKCodigo_tbl_nivelestudio,Acudiente, Imagen)" + " values ('" + id + "','" + primernombre + "','" + segundonombre + "','" + primerapellido + "','" + segundoapellido + "','" + contacto + "','" + direccion + "','" + correo + "','" + edad + "','" + estudio + "','" + acudientes + "','"+imagen+"')";
                 MySqlCommand comando = new MySqlCommand(cosulta, obj_conexion.conex);
                 MySqlDataReader lectura = comando.ExecuteReader();
                 obj_conexion.fnt_Desconectar();
@@ -46,6 +46,11 @@ namespace Datos
         public DataTable getDt() { return Dt; }
 
         public void fnt_Guardar(string str_id, string str_primernombre, string str_segundonombre, string str_primerapellido, string str_segundoapellido, string str_contacto, string str_correo, string str_edad, int int_estudio, string str_acudientes)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void fnt_Guardar(string str_id, string str_primernombre, string str_segundonombre, string str_primerapellido, string str_segundoapellido, string str_contacto, string str_correo, string str_edad, int int_estudio, string str_acudientes, byte[] byt_imagen)
         {
             throw new NotImplementedException();
         }

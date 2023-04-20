@@ -77,7 +77,7 @@ namespace App_inscripciones
 
            
             {
-                MessageBox.Show("Error al guardar imagen" + ex.Message);
+                MessageBox.Show("Error al guardar imagen");
             }
             cls_agregarCandidatos objagregarCandidato = new cls_agregarCandidatos (txt_identificacion.Text, txt_primer_nombre.Text,txt_segundo_nombre.Text, txt_primer_apellido.Text,txt_segundo_apellido.Text,txt_contacto.Text,txt_direccion.Text,txt_correo.Text,txt_Edad1.Text,cbx_nivelestudio.SelectedIndex + 1,txt_acudinetes.Text,aByte);
             MessageBox.Show("" + objagregarCandidato.getMsn());
